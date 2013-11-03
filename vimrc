@@ -8,6 +8,10 @@ let g:solarized_termcolors = 256
 colorscheme solarized 
 
 " Indenting
+set smartindent
+set tabstop=2
+set shiftwidth=2
+set expandtab
 filetype plugin indent on
 
 " NERDTree
