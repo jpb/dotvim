@@ -1,6 +1,3 @@
-[submodule "bundle/kolor"]
-	path = bundle/kolor
-	url = https://github.com/zeis/vim-kolor.git
 [submodule "bundle/solarized"]
 	path = bundle/solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
