@@ -19,3 +19,6 @@
 [submodule "bundle/snippets"]
 	path = bundle/snippets
 	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = https://github.com/tpope/vim-fugitive.git
