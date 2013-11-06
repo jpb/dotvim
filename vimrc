@@ -31,6 +31,9 @@ nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR> " find merge conflict mar
 " Double-tap Space to Clear Selection
 nmap <SPACE> <SPACE>:noh<CR>
 
+" Map jj to esc for insert mode
+imap jj <Esc>
+
 " Autosave
 autocmd BufLeave,FocusLost * silent! wall
 
