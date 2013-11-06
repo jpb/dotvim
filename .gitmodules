@@ -25,3 +25,12 @@
 [submodule "bundle/vroom"]
 	path = bundle/vroom
 	url = git://github.com/skalnik/vim-vroom.git
+[submodule "bundle/ag"]
+	path = bundle/ag
+	url = https://github.com/rking/ag.vim.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/tabular"]
+	path = bundle/tabular
+	url = https://github.com/godlygeek/tabular.git
