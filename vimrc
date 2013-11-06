@@ -28,9 +28,12 @@ set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR> " find merge conflict markers
 
+" Double-tap Space to Clear Selection
+nmap <SPACE> <SPACE>:noh<CR>
+
 " Autosave
 autocmd BufLeave,FocusLost * silent! wall
-"
+
 " Highlight when past character limit
 autocmd BufWinEnter * let w:m1=matchadd('Error', '\%>94v.\+', -1)
 
