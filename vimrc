@@ -31,6 +31,10 @@ nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR> " find merge conflict mar
 " Double-tap Space to Clear Selection
 nmap <SPACE> <SPACE>:noh<CR>
 
+" Tab to, well, tab
+nmap <Tab> :><CR>
+nmap <S-Tab> :<<CR>
+
 " Map jj to esc for insert mode
 imap jj <Esc>
 
@@ -65,6 +69,12 @@ nmap <C-n> <C-w>>
 nmap <C-m> <C-w><
 nmap <C-S-n> <C-w>+
 nmap <C-S-m> <C-w>-
+
+" Copy across vim sessions
+vmap <silent> ,y y:new<CR>:call setline(1,getregtype())<CR>o<Esc>P:wq! ~/reg.txt<CR>
+nmap <silent> ,y :new<CR>:call setline(1,getregtype())<CR>o<Esc>P:wq! ~/reg.txt<CR>
+map <silent> ,p :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>p
+map <silent> ,P :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>P
 
 " NERDTree
 "  Open NERDTree
