@@ -29,7 +29,7 @@ set smartcase   " ... unless they contain at least one capital letter
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR> " find merge conflict markers
 
 " Double-tap Space to Clear Selection
-nmap <SPACE> <SPACE>:noh<CR>
+nmap <SPACE><SPACE> :noh<CR>
 
 " Tab to, well, tab
 nmap <Tab> :><CR>
