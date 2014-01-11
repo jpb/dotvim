@@ -85,3 +85,6 @@ autocmd vimenter * if !argc() | NERDTree | endif
 " Files
 set backupdir^=~/.vim/_backup//    " where to put backup files.
 set directory^=~/.vim/_temp//      " where to put swap files.
+
+" gettext
+let g:surround_{char2nr("_")} = "<?= _('\r') ?>"
