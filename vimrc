@@ -10,6 +10,10 @@ let g:solarized_termtrans = 1
 let g:solarized_termcolors = 256
 colorscheme solarized
 
+au BufNewFile,BufRead *.thor set filetype=ruby
+au BufNewFile,BufRead *.cap set filetype=ruby
+au BufNewFile,BufRead *.es6 set filetype=javascript
+
 " Indenting
 set smartindent
 set tabstop=2
@@ -17,6 +21,10 @@ set shiftwidth=2
 set expandtab
 filetype plugin indent on
 set nowrap
+
+" PHP
+au FileType php set noexpandtab
+autocmd BufNewFile,BufRead /Users/james/Sites/cmm/* set noexpandtab
 
 set number
 set ruler
