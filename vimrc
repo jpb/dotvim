@@ -9,6 +9,8 @@ set background=dark
 let g:solarized_termtrans = 1
 let g:solarized_termcolors = 256
 colorscheme solarized
+let g:airline_theme = 'solarized'
+let g:airline_powerline_fonts = 1
 
 au BufNewFile,BufRead *.thor set filetype=ruby
 au BufNewFile,BufRead *.cap set filetype=ruby
