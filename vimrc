@@ -69,10 +69,10 @@ endfunction
 autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
 
 " Switch between panes
-nmap <C-l> <C-w>l
-nmap <C-h> <C-w>h
-nmap <C-j> <C-w><C-w>
-nmap <C-k> <C-w>W
+" nmap <C-l> <C-w>l
+" nmap <C-h> <C-w>h
+" nmap <C-j> <C-w><C-w>
+" nmap <C-k> <C-w>W
 
 " Rezise pane
 nmap <C-n> <C-w>>
