@@ -99,3 +99,9 @@ set directory^=~/.vim/_temp//      " where to put swap files.
 
 " gettext
 let g:surround_{char2nr("_")} = "<?= _('\r') ?>"
+
+" Paste
+nmap <C-v> :set paste<CR>:r !reattach-to-user-namespace pbpaste<CR>:set nopaste<CR>
+imap <C-v> <Esc>:set paste<CR>:r !reattach-to-user-namespace pbpaste<CR>:set nopaste<CR>
+nmap <C-c> :.w !reattach-to-user-namespace pbcopy<CR><CR>
+vmap <C-c> :w !reattach-to-user-namespace pbcopy<CR><CR>
