@@ -37,6 +37,7 @@ set incsearch   " incremental searching
 set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR> " find merge conflict markers
+let g:ctrlp_show_hidden = 1
 
 " Double-tap Space to Clear Selection
 nmap <SPACE><SPACE> :noh<CR>
