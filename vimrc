@@ -38,7 +38,6 @@ set ignorecase  " searches are case insensitive...
 set smartcase   " ... unless they contain at least one capital letter
 nmap <silent> <leader>fc <ESC>/\v^[<=>]{7}( .*\|$)<CR> " find merge conflict markers
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_custom_ignore = 'cookbooks\|tmp'
 
 " Double-tap Space to Clear Selection
 nmap <SPACE><SPACE> :noh<CR>
@@ -106,3 +105,10 @@ nmap <C-v> :set paste<CR>:r !reattach-to-user-namespace pbpaste<CR>:set nopaste<
 imap <C-v> <Esc>:set paste<CR>:r !reattach-to-user-namespace pbpaste<CR>:set nopaste<CR>
 nmap <C-c> :.w !reattach-to-user-namespace pbcopy<CR><CR>
 vmap <C-c> :w !reattach-to-user-namespace pbcopy<CR><CR>
+
+" gitgutter
+highlight clear SignColumn
+highlight GitGutterAdd ctermfg=green
+highlight GitGutterChange ctermfg=yellow
+highlight GitGutterDelete ctermfg=red
+highlight GitGutterChangeDelete ctermfg=yellow
