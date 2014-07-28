@@ -92,6 +92,8 @@ map <silent> ,P :sview ~/reg.txt<CR>"zdddG:q!<CR>:call setreg('"', @", @z)<CR>P
 nmap <Leader>n :NERDTreeToggle<CR>
 "  Open NERDTree if no files were specified
 autocmd vimenter * if !argc() | NERDTree | endif
+"  Ignore non-code directories
+set wildignore+=*/target/*
 
 " Files
 set backupdir^=~/.vim/_backup//    " where to put backup files.
