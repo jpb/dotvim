@@ -24,10 +24,6 @@ set expandtab
 filetype plugin indent on
 set nowrap
 
-" PHP
-au FileType php set noexpandtab
-autocmd BufNewFile,BufRead /Users/james/Sites/cmm/* set noexpandtab
-
 set number
 set ruler
 
@@ -98,9 +94,6 @@ set wildignore+=*/target/*
 " Files
 set backupdir^=~/.vim/_backup//    " where to put backup files.
 set directory^=~/.vim/_temp//      " where to put swap files.
-
-" gettext
-let g:surround_{char2nr("_")} = "<?= _('\r') ?>"
 
 " Paste
 nmap <C-v> :set paste<CR>:r !reattach-to-user-namespace pbpaste<CR>:set nopaste<CR>
